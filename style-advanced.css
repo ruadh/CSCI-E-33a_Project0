@@ -29,6 +29,7 @@ input[type="text"] {
     box-shadow: none;
     border: 1px solid #dfe1e5;
     display: flex;
+    margin: 0 auto;
     padding-left: 3rem;
 }
 
@@ -36,7 +37,6 @@ input[type="text"] {
     width: auto;
     min-width: 380px;
     margin-top: 1rem;
-    margin: 0 auto;
 }
 
 input[type="submit"] {
@@ -73,7 +73,7 @@ nav a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* margin: 0 auto; */
+    margin: 0 auto;
 }
 
 .green {
@@ -116,35 +116,18 @@ nav a {
     font-size: 12px;
     border-radius: 2px;
     height: 30px;
-    width: 140px;
+    min-width: 120px;
 }
 
-.wrapper-advanced {
-    margin-left: 3rem;
-    display: flex;
-    flex-direction: column;
+.advanced {
+    border-top: 1px lightgray solid;
+    padding-top:  3.5rem;
 }
 
-.wrapper-advanced h1 {
-    border-bottom: 1px lightgray solid;
-    padding-bottom: 2rem;
-}
-
-.advanced-form {
-    padding-top:  2rem;
-    display: flex;
-    flex-direction: column;
-    max-width: 75%;
-}
-
-.advanced-form input {
+.advanced input {
     height: 25px;
     border-radius: 1px;
     padding-left: 8px;
-}
-
-.advanced-form .button-row {
-    justify-content: flex-end;
 }
 
 legend {
@@ -157,21 +140,6 @@ form {
     min-width: 50%;
 }
 
-.field-pair {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 1rem;
-    justify-content: space-between;
-}
-
-.field-pair input {
-    flex-grow: 1;
-}
-
-.field-pair label {
-    flex-shrink: 0;
-    width: 200px;
-}
 
 /* Wider seach box for wider screens */
 
