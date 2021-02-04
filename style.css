@@ -2,8 +2,6 @@ body {
     font-family: arial,sans-serif;
     display: flex;
     flex-direction: column;
-    align-content: stretch;
-    /* justify-content: space-around; */
 }
 
 h1 {
@@ -12,21 +10,16 @@ h1 {
     color: #db3236;
     clear: right;
     padding-bottom: 1rem;
-    /* font-size: 92px; */
-    /* font-family: futura; */
-    /* margin-top: 50vh; */
 }
 
 .wrapper h1 {
     font-size: 92px;
-    padding-top:  20vh;
-    /* font-weight: bold; */
+    padding-top:  12vh;
 }
 
 h2 {
     color: #4885ed;
     font-size: medium;
-    text-align: right;
 }
 
 input[type="text"] {
@@ -38,19 +31,15 @@ input[type="text"] {
     display: flex;
     margin: 0 auto;
     padding-left: 3rem;
-    /* background-color: lightgoldenrodyellow; */
-    /* width: auto; */
 }
 
 #search-text {
     width: auto;
-    min-width: 50%;
-    /* min-width: 100%; */
+    min-width: 380px;
     margin-top: 1rem;
 }
 
 input[type="submit"] {
-    /* display: inline-block; */
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
     border-radius: 4px;
@@ -66,7 +55,6 @@ input[type="submit"] {
 nav {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: left;
 }
 
 nav li {
@@ -103,15 +91,20 @@ nav a {
 .wrapper {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
+    /* justify-content: center; */
 }
 
 .faux-logo, .faux-logo * {
-    /* max-width: 25%; */
     text-align: center;
     margin: 0;
     padding-bottom: 0;
     font-weight: lighter;
+}
+
+.faux-logo h2 {
+    text-align: right;
+    padding-right: 1rem;
 }
 
 #advanced-search {
@@ -136,12 +129,7 @@ nav a {
     height: 25px;
     border-radius: 1px;
     padding-left: 8px;
-    /* display: inline-block; */
 }
-
-/* .advanced label {
-    display: block;
-} */
 
 legend {
     font-size: 18px;
@@ -149,3 +137,15 @@ legend {
 }
 
 
+form {
+    min-width: 50%;
+}
+
+
+/* Wider seach box for wider screens */
+
+@media (min-width: 640px) {
+    #search-text {
+        min-width: 561px;
+    }
+}
