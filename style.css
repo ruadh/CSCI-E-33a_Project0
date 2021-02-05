@@ -1,7 +1,5 @@
 body {
     font-family: arial,sans-serif;
-    /* display: flex;
-    flex-direction: column; */
 }
 
 h1 {
@@ -37,6 +35,10 @@ input[type="text"] {
     min-width: 380px;
     margin-top: 1rem;
     margin: 0 auto;
+    background-image: url("noun_Magnifying Glass_938460.svg");
+    background-size: 4% auto;
+    background-repeat: no-repeat;
+    background-position: 2%;
 }
 
 input[type="submit"] {
@@ -131,7 +133,7 @@ nav a {
 }
 
 .advanced-form {
-    padding-top:  2rem;
+    padding-top:  1rem;
     display: flex;
     flex-direction: column;
     max-width: 75%;
@@ -148,13 +150,14 @@ nav a {
 }
 
 legend {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 2rem;
 }
 
 
 form {
     min-width: 50%;
+    margin-top: 1.5rem;
 }
 
 .field-pair {
@@ -170,7 +173,7 @@ form {
 
 .field-pair label {
     flex-shrink: 0;
-    width: 200px;
+    width: 13rem;
 }
 
 /* Wider seach box for wider screens */
