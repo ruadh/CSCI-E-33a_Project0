@@ -1,5 +1,5 @@
 body {
-    font-family: arial,sans-serif;
+    font-family: arial, sans-serif;
 }
 
 h1 {
@@ -10,50 +10,18 @@ h1 {
     padding-bottom: 1rem;
 }
 
-.wrapper h1 {
-    font-size: 92px;
-    padding-top:  12vh;
-}
-
 h2 {
     color: #4885ed;
     font-size: medium;
 }
 
-input[type="text"] {
-    font-size: large;
-    border-radius: 24px;
-    height: 44px;
-    box-shadow: none;
-    border: 1px solid #dfe1e5;
-    display: flex;
-    padding-left: 3rem;
+form {
+    min-width: 50%;
+    margin-top: 1.5rem;
 }
 
-#search-text {
-    width: auto;
-    min-width: 380px;
-    margin-top: 1rem;
-    margin: 0 auto;
-    /* Magnifying Glass by il Capitano from the Noun Project, with modifications by me. */
-    background-image: url("noun_Magnifying Glass_938460.svg");
-    background-size: 4% auto;
-    background-repeat: no-repeat;
-    background-position: 2%;
-}
 
-input[type="submit"] {
-    background-color: #f8f9fa;
-    border: 1px solid #f8f9fa;
-    border-radius: 4px;
-    font-family: arial,sans-serif;
-    font-size: 14px;
-    margin: 11px 4px;
-    padding: 0 16px;
-    line-height: 27px;
-    height: 36px;
-    min-width: 54px;
-}
+/* Nav Bar */
 
 nav {
     display: flex;
@@ -62,7 +30,7 @@ nav {
 
 nav li {
     display: inline-block;
-    color: rgba(0,0,0,0.87);
+    color: rgba(0, 0, 0, 0.87);
     padding-right: 15px;
     font-size: 15px;
 }
@@ -72,10 +40,34 @@ nav a {
     text-decoration: none;
 }
 
-.button-row {
+
+/* Basic and Image Search Layout */
+
+.wrapper {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper h1 {
+    font-size: 92px;
+    padding-top: 12vh;
+}
+
+
+/* Google Logo */
+
+.logo,
+.logo * {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 0;
+    font-weight: lighter;
+}
+
+.logo h2 {
+    text-align: right;
+    padding-right: 1rem;
 }
 
 .green {
@@ -90,76 +82,88 @@ nav a {
     color: #4885ed;
 }
 
-.wrapper {
+
+/* Basic and Image Search Forms */
+
+input[type="text"] {
+    font-size: large;
+    border-radius: 24px;
+    height: 44px;
+    box-shadow: none;
+    border: 1px solid #dfe1e5;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding-left: 3rem;
 }
 
-.faux-logo, .faux-logo * {
-    text-align: center;
-    margin: 0;
-    padding-bottom: 0;
-    font-weight: lighter;
+input[type="submit"] {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
 }
 
-.faux-logo h2 {
-    text-align: right;
-    padding-right: 1rem;
+.search-txt {
+    width: auto;
+    min-width: 380px;
+    margin-top: 1rem;
+    margin: 0 auto;
+    /* Magnifying Glass by il Capitano from the Noun Project, with modifications by me. */
+    background-image: url("noun_Magnifying Glass_938460.svg");
+    background-size: 4% auto;
+    background-repeat: no-repeat;
+    background-position: 2%;
 }
 
-#advanced-search {
-    border: 1px solid #3079ed;
-    background-color: #3079ed;
-    color: white;
-    padding: 0 12px;
-    margin: 10px 0;
-    font-weight: bold;
-    font-size: 12px;
-    border-radius: 2px;
-    height: 30px;
-    width: 140px;
+.search-txt:hover,
+.search-txt:focus {
+    box-shadow: 0px 0px 6px #dcdcdc;
 }
 
-.wrapper-advanced {
+.search-txt:focus {
+    outline: none;
+}
+
+.btn-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/* Advanced Search Page Layout */
+
+.wrapper-adv {
     margin-left: 3rem;
     display: flex;
     flex-direction: column;
 }
 
-.wrapper-advanced h1 {
+.wrapper-adv h1 {
     margin-left: -48px;
     padding-left: 48px;
     border-bottom: 1px lightgray solid;
     padding-bottom: 2rem;
 }
 
-.advanced-form {
-    padding-top:  1rem;
+
+/* Advanced Search Form */
+
+.adv-form {
+    padding-top: 1rem;
     display: flex;
     flex-direction: column;
     max-width: 75%;
 }
 
-.advanced-form input {
-    height: 25px;
-    border-radius: 1px;
-    padding-left: 8px;
-}
-
-.advanced-form .button-row {
-    justify-content: flex-end;
-}
-
 legend {
     font-size: 20px;
     margin-bottom: 2rem;
-}
-
-
-form {
-    min-width: 50%;
-    margin-top: 1.5rem;
 }
 
 .field-pair {
@@ -178,10 +182,41 @@ form {
     width: 13rem;
 }
 
-/* Wider seach box for wider screens */
+.adv-form input {
+    height: 25px;
+    border-radius: 1px;
+    padding-left: 8px;
+    outline: none;
+}
+
+.adv-form input:focus {
+    box-shadow: inset 0px 1px 3px lightgray;
+}
+
+.adv-form .btn-row {
+    justify-content: flex-end;
+}
+
+.adv-form input[type="submit"] {
+    border: 1px solid #3079ed;
+    background-color: #3079ed;
+    color: white;
+    padding: 0 12px;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 2px;
+    height: 30px;
+    width: 140px;
+}
+
+
+/* Responsive search box width */
 
 @media (min-width: 640px) {
-    #search-text {
+    .search-txt {
         min-width: 561px;
     }
 }
+
+
